@@ -1,0 +1,14 @@
+﻿<Window x:Class="OrderS.ClientData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderS"
+        mc:Ignorable="d"
+        Title="ClientData" Height="450" Width="800">
+    <Grid>
+        <DataGrid  Name="OrdersGrid" IsReadOnly="True" Margin="0,32,0,0"/>
+        <TextBlock Name="Sum" FontSize="18" HorizontalAlignment="Left" Margin="10,3,0,0" Text="Paid in total: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

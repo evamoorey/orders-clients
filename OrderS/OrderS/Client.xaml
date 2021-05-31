@@ -1,0 +1,19 @@
+﻿<Window x:Class="OrderS.Client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderS"
+        mc:Ignorable="d"
+        Title="Client" Height="450" Width="800" Closing="Client_OnClosing" MinHeight="450" MinWidth="800">
+    <Grid>
+        <DataGrid Name="ProductsGrid" IsReadOnly="True" MouseLeftButtonUp="ProductsGrid_OnMouseLeftButtonUp"  Margin="10,30,0,10" Width="440" HorizontalAlignment="Left"/>
+        <DataGrid Name="CartGrid" MouseRightButtonUp="CartGrid_OnMouseRightButtonUp" IsReadOnly="True" Margin="0,30,10,72" Width="320" HorizontalAlignment="Right"/>
+        <Label Name="GoodsLabel" Content="Goods in the store" FontSize="14" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Name="CartLabel" Content="Shopping cart" FontSize="14" Margin="470,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="My orders" Click="MyOrders_OnClick" BorderThickness="0" Name="MyOrders" HorizontalAlignment="Right" Margin="0,0,10,0" Height="30" VerticalAlignment="Top"/>
+        <Label Name="SumLabel" Content="Sum: 0" HorizontalAlignment="Left" Margin="472,362,0,0" VerticalAlignment="Top"/>
+        <Button Name="SubmitOrder" Click="SubmitOrder_OnClick" Content="Submit order" BorderThickness="0" HorizontalAlignment="Right" Margin="0,362,10,0" Width="79" RenderTransformOrigin="0.529,0.65" Height="26" VerticalAlignment="Top"/>
+        <Button Name="Authorize" Content="Back to authorization" BorderThickness="0" Click="Authorize_OnClick"  HorizontalAlignment="Left" Margin="472,388,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

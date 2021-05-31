@@ -1,0 +1,20 @@
+﻿<Window x:Class="OrderS.Seller"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderS"
+        mc:Ignorable="d"
+        Title="Seller" Height="450" Width="800" Closing="Seller_OnClosing" MinHeight="450" MinWidth="800">
+    <Grid>
+        <DataGrid Name="SellerGrid" IsReadOnly="True" MouseRightButtonUp="SellerGrid_OnMouseRightButtonUp" MouseLeftButtonUp="SellerGrid_OnMouseLeftButtonUp"  Margin="0,30,0,0" Width="385" HorizontalAlignment="Left"/>
+        <DataGrid Name="ProductsGrid" IsReadOnly="True" Margin="400,30,0,0" MouseRightButtonUp="ProductsGrid_OnMouseRightButtonUp" Height="402" VerticalAlignment="Top"/>
+        <Button Name="ClientsButton" Click="ClientsButton_OnClick" Content="Clients" Height="30" Width="70" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Name="OrdersButton" Click="OrdersButton_OnClick" Content="Orders" Height="30" Width="71" BorderThickness="0" HorizontalAlignment="Left" Margin="70,0,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="ProductsLabel" HorizontalAlignment="Left" Margin="400,4,0,0" Text="Products in the shop" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.507,0.519"/>
+        <Button Name="Authorize" Content="Back to authorization" BorderThickness="0" Click="Authorize_OnClick"  HorizontalAlignment="Left" Margin="623,6,0,0" VerticalAlignment="Top"/>
+        <Button Name="Report" Click="Report_OnClick"  Content="Money report" Height="30" Width="76" BorderThickness="0" HorizontalAlignment="Left" Margin="215,0,0,0" VerticalAlignment="Top"/>
+        <Button Name="ActiveOrders" Click="ActiveOrders_OnClick"  Content="Active orders" Height="30" Width="74" BorderThickness="0" HorizontalAlignment="Left" Margin="141,0,0,0" VerticalAlignment="Top"/>
+        <Button Name="CancelReport" Click="CancelReport_OnClick"  Content="Cancel report" Height="30" Width="76" BorderThickness="0" HorizontalAlignment="Left" Margin="291,0,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

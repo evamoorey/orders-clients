@@ -1,0 +1,15 @@
+﻿<Window x:Class="OrderS.OrderSummary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderS"
+        mc:Ignorable="d"
+        Title="OrderSummary" Height="339" Width="600" >
+    <Grid Margin="0,0,10,15">
+        <DataGrid Name="ProductsGrid" IsReadOnly="True" Height="246" VerticalAlignment="Top"/>
+        <TextBlock Name="Sum" FontSize="14" HorizontalAlignment="Left" Margin="10,256,0,0" Text="Sum: " TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Click="Pay_OnClick" Name="Pay" Width="80" Height="25" BorderThickness="0" Content="Pay" HorizontalAlignment="Left" Margin="500,254,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
